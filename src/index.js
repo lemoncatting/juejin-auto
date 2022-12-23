@@ -69,7 +69,7 @@ async function dipLucky() {
   }
 
   api.check_in().then(({ sum_point }) => {
-    message(`签到成功!当前积分: ${sum_point}`)
+    message(`签到成功!当前矿石: ${sum_point}`)
     // 去抽奖
     ALL_IN === 'true' ? draw_all() : draw()
   })
